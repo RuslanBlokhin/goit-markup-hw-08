@@ -1,0 +1,103 @@
+.low {
+    background-color: #2f303a;
+}
+
+.low-container {
+    display: flex;
+}
+
+.contact-box {
+    margin-right: 70px;
+}
+
+.enjoy-title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.enjoy {
+    padding-top: 12px;
+    margin-left: 70px;
+}
+
+.enjoy .social-list {
+    margin: 0;
+    margin-top: 20px;
+}
+
+.low-container {
+    padding-top: 60px;
+}
+
+.low .link {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+
+}
+
+
+.addr {
+    color: var(--primary-white-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+
+    margin-top: 20px;
+    margin-bottom: 9px;
+}
+
+.contacts-box .list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.link-mail {
+    margin-bottom: 9px;
+}
+
+.subscribe-title {
+    position: absolute;
+    margin-left: 92px;
+    margin-bottom: 0;
+    padding-top: 12px;
+}
+
+.subscribe-form {
+    display: flex;
+    align-items: baseline;
+    margin-left: 92px;
+    padding-top: 14px;
+}
+
+.subscribe-email {
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: #2f303a;
+    color: var(--primary-white-color);
+}
+
+.subscribe-email-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
