@@ -25,6 +25,11 @@
                         <li><a href="#" class="link">Контакты</a></li>
                     </ul>
                 </nav>
+                <button class="mobile-open-btn" data-menu-button>
+                    <svg class="mobile-open-icon">
+                        <use href="./images/sprite.svg#icon-burger-menu"></use>
+                    </svg>
+                </button>
                 <ul class="list contact-list">
                     <li><a href="mailto:info@devstudio.com" class="link-contact mail">
                                 <svg class="email-icon">
@@ -37,6 +42,43 @@
                         <svg class="tel-icon">
                             <use href="./images/sprite.svg#icon-smartphone"></use>
                         </svg>+38 096 111 11 11</a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu" data-menu>
+                <button class="mobile-menu-close-btn" data-menu-close>
+                    <svg class="mobile-menu-close-icon">
+                        <use href="./images/sprite.svg#icon-close-button" icon-close-button></use>
+                    </svg>
+                </button>
+                <ul class="site-nav list">
+                    <li><a href="./index.html" class="link current">Студия</a></li>
+                    <li><a href="./portfolio.html" class="link">Портфолио</a></li>
+                    <li><a href="#" class="link">Контакты</a></li>
+                </ul>
+                <ul class="list contact-list">
+                    <li><a href="tel:+380961111111" class="link-contact tel">
+                        +38 096 111 11 11
+                        </a>
+                    </li>
+                    <li><a href="mailto:info@devstudio.com" class="link-contact mail">
+                        info@devstudio.com
+                        </a>
+                    </li>
+                    
+                </ul>
+                <ul class="menu-social-list list">
+                    <li class="menu-social-list-item">
+                        <a class="menu-social-list-link">Instagram</a>
+                    </li>
+                    <li class="menu-social-list-item">
+                        <a class="menu-social-list-link">Twitter</a>
+                    </li>
+                    <li class="menu-social-list-item">
+                        <a class="menu-social-list-link">Facebook</a>
+                    </li>
+                    <li class="menu-social-list-item">
+                        <a class="menu-social-list-link">LinkedIn</a>
+                    </li>
                 </ul>
             </div>
         </header>
@@ -60,10 +102,21 @@
                 <div class="container">
                     <ul class="list gallery-list">
                         <li class="gallery-item">
-
                             <a href="" class="picture">
                                 <div class="thumb-text-card">
-                                    <img class="img" src="./images/Portfolio/img1.jpg" alt="Ноутбук" width="370">
+                                    <picture class="gallery-list-item">
+                                        <source
+                                            srcset="./images/Portfolio/desctop/img.jpg 1x, ./images/Portfolio/desctop/img@2x.jpg 2x"
+                                            media="(min-width: 1200px)">
+                                        <source
+                                            srcset="./images/Portfolio/tablet/img.jpg 1x, ./images/Portfolio/tablet/img@2x.jpg 2x"
+                                            media="(min-width: 768px)">
+                                        <source
+                                            srcset="./images/Portfolio/mobile/img.jpg 1x, ./images/Portfolio/mobile/img@2x.jpg 2x"
+                                            media="(min-width: 280px)">
+                                        <img class="" src="./images/Portfolio/mobile/img.jpg"
+                                            alt="Михаил" />
+                                    </picture>
                                     <p class="div-box">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                                 </div>  
                                 <div class="gallery-box">
@@ -74,7 +127,19 @@
                         </li>
                         <li class="gallery-item">
                             <a href="" class="picture">
-                                <img src="./images/Portfolio/img2.jpg" alt="Баскетболисты" width="370">
+                                <picture class="gallery-list-item">
+                                        <source
+                                            srcset="./images/Portfolio/desctop/img-1.jpg 1x, ./images/Portfolio/desctop/img-1@2x.jpg 2x"
+                                            media="(min-width: 1200px)">
+                                        <source
+                                            srcset="./images/Portfolio/tablet/img-1.jpg 1x, ./images/Portfolio/tablet/img-1@2x.jpg 2x"
+                                            media="(min-width: 768px)">
+                                        <source
+                                            srcset="./images/Portfolio/mobile/img-1.jpg 1x, ./images/Portfolio/mobile/img-1@2x.jpg 2x"
+                                            media="(min-width: 280px)">
+                                        <img class="" src="./images/Portfolio/mobile/img-1.jpg"
+                                            alt="Михаил" />
+                                </picture>
                                 <div class="gallery-box">
                                     <h3 class="picture-name">Постер New Orlean vs Golden Star</h3>
                                     <p class="picture-text">Дизайн</p>  
@@ -83,7 +148,19 @@
                         </li>
                         <li class="gallery-item">
                             <a href="" class="picture">
-                                <img src="./images/Portfolio/img3.jpg" alt="Seafood" width="370">
+                               <picture class="gallery-list-item">
+                                        <source
+                                            srcset="./images/Portfolio/desctop/img-2.jpg 1x, ./images/Portfolio/desctop/img-2@2x.jpg 2x"
+                                            media="(min-width: 1200px)">
+                                        <source
+                                            srcset="./images/Portfolio/tablet/img-2.jpg 1x, ./images/Portfolio/tablet/img-2@2x.jpg 2x"
+                                            media="(min-width: 768px)">
+                                        <source
+                                            srcset="./images/Portfolio/mobile/img-2.jpg 1x, ./images/Portfolio/mobile/img-2@2x.jpg 2x"
+                                            media="(min-width: 280px)">
+                                        <img class="" src="./images/Portfolio/mobile/img-2.jpg"
+                                            alt="Михаил" />
+                                </picture>
                                 <div class="gallery-box">
                                     <h3 class="picture-name">Ресторан Seafood</h3>
                                     <p class="picture-text">Приложение</p>    
@@ -92,7 +169,19 @@
                         </li>
                         <li class="gallery-item">
                             <a href="" class="picture">
-                                <img src="./images/Portfolio/img4.jpg" alt="Наушники" width="370">
+                                <picture class="gallery-list-item">
+                                        <source
+                                            srcset="./images/Portfolio/desctop/img-3.jpg 1x, ./images/Portfolio/desctop/img-3@2x.jpg 2x"
+                                            media="(min-width: 1200px)">
+                                        <source
+                                            srcset="./images/Portfolio/tablet/img-3.jpg 1x, ./images/Portfolio/tablet/img-3@2x.jpg 2x"
+                                            media="(min-width: 768px)">
+                                        <source
+                                            srcset="./images/Portfolio/mobile/img-3.jpg 1x, ./images/Portfolio/mobile/im-3g@2x.jpg 2x"
+                                            media="(min-width: 280px)">
+                                        <img class="" src="./images/Portfolio/mobile/img-3.jpg"
+                                            alt="Михаил" />
+                                </picture>
                                 <div class="gallery-box">
                                     <h3 class="picture-name">Проект Prime</h3>
                                     <p class="picture-text">Маркетинг</p>  
@@ -101,7 +190,19 @@
                         </li>
                         <li class="gallery-item">
                             <a href="" class="picture">
-                                <img src="./images/Portfolio/img6.jpg" alt="Коробки" width="370">
+                                <picture class="gallery-list-item">
+                                        <source
+                                            srcset="./images/Portfolio/desctop/img-4.jpg 1x, ./images/Portfolio/desctop/img-4@2x.jpg 2x"
+                                            media="(min-width: 1200px)">
+                                        <source
+                                            srcset="./images/Portfolio/tablet/img-4.jpg 1x, ./images/Portfolio/tablet/img-4@2x.jpg 2x"
+                                            media="(min-width: 768px)">
+                                        <source
+                                            srcset="./images/Portfolio/mobile/img-4.jpg 1x, ./images/Portfolio/mobile/img-4@2x.jpg 2x"
+                                            media="(min-width: 280px)">
+                                        <img class="" src="./images/Portfolio/mobile/img-4.jpg"
+                                            alt="Михаил" />
+                                </picture>
                                 <div class="gallery-box">
                                     <h3 class="picture-name">Проект Boxes</h3>
                                     <p class="picture-text">Приложение</p>
@@ -111,7 +212,19 @@
                         </li>
                         <li class="gallery-item">
                             <a href="" class="picture">
-                                <img src="./images/Portfolio/img7.jpg" alt="Монитор" width="370">
+                                <picture class="gallery-list-item">
+                                        <source
+                                            srcset="./images/Portfolio/desctop/img-5.jpg 1x, ./images/Portfolio/desctop/img-5@2x.jpg 2x"
+                                            media="(min-width: 1200px)">
+                                        <source
+                                            srcset="./images/Portfolio/tablet/img-5.jpg 1x, ./images/Portfolio/tablet/im-5g@2x.jpg 2x"
+                                            media="(min-width: 768px)">
+                                        <source
+                                            srcset="./images/Portfolio/mobile/img-5.jpg 1x, ./images/Portfolio/mobile/img-5@2x.jpg 2x"
+                                            media="(min-width: 280px)">
+                                        <img class="" src="./images/Portfolio/mobile/img-5.jpg"
+                                            alt="Михаил" />
+                                </picture>
                                 <div class="gallery-box">
                                     <h3 class="picture-name">Inspiration has no Borders</h3>
                                     <p class="picture-text">Веб-сайт</p>
@@ -120,7 +233,19 @@
                         </li>
                         <li class="gallery-item">
                             <a href="" class="picture">
-                                <img src="./images/Portfolio/img8.jpg" alt="Издание Limited Edition" width="370">
+                                <picture class="gallery-list-item">
+                                        <source
+                                            srcset="./images/Portfolio/desctop/img-6.jpg 1x, ./images/Portfolio/desctop/img-6@2x.jpg 2x"
+                                            media="(min-width: 1200px)">
+                                        <source
+                                            srcset="./images/Portfolio/tablet/img-6.jpg 1x, ./images/Portfolio/tablet/img-6@2x.jpg 2x"
+                                            media="(min-width: 768px)">
+                                        <source
+                                            srcset="./images/Portfolio/mobile/img-6.jpg 1x, ./images/Portfolio/mobile/img-6@2x.jpg 2x"
+                                            media="(min-width: 280px)">
+                                        <img class="" src="./images/Portfolio/mobile/img-6.jpg"
+                                            alt="Михаил" />
+                                </picture>
                                 <div class="gallery-box">
                                     <h3 class="picture-name">Издание Limited Edition</h3>
                                     <p class="picture-text">Дизайн</p>   
@@ -129,7 +254,19 @@
                         </li>
                         <li class="gallery-item">
                             <a href="" class="picture">
-                                <img src="./images/Portfolio/img9.jpg" alt="Проект LAB" width="370">
+                               <picture class="gallery-list-item">
+                                        <source
+                                            srcset="./images/Portfolio/desctop/img-7.jpg 1x, ./images/Portfolio/desctop/img@2x-7.jpg 2x"
+                                            media="(min-width: 1200px)">
+                                        <source
+                                            srcset="./images/Portfolio/tablet/img-7.jpg 1x, ./images/Portfolio/tablet/img@2x-7.jpg 2x"
+                                            media="(min-width: 768px)">
+                                        <source
+                                            srcset="./images/Portfolio/mobile/img-7.jpg 1x, ./images/Portfolio/mobile/img@2x-7.jpg 2x"
+                                            media="(min-width: 280px)">
+                                        <img class="" src="./images/Portfolio/mobile/img-7.jpg"
+                                            alt="Михаил" />
+                                </picture>
                                 <div class="gallery-box">
                                     <h3 class="picture-name">Проект LAB</h3>
                                     <p class="picture-text">Маркетинг</p> 
@@ -138,7 +275,19 @@
                         </li>
                         <li class="gallery-item">
                             <a href="" class="picture">                                                                                           
-                                <img src="./images/Portfolio/img10.jpg" alt="Growing Business" width="370">
+                                <picture class="gallery-list-item">
+                                        <source
+                                            srcset="./images/Portfolio/desctop/img-8.jpg 1x, ./images/Portfolio/desctop/img-8@2x.jpg 2x"
+                                            media="(min-width: 1200px)">
+                                        <source
+                                            srcset="./images/Portfolio/tablet/img-8.jpg 1x, ./images/Portfolio/tablet/img-8@2x.jpg 2x"
+                                            media="(min-width: 768px)">
+                                        <source
+                                            srcset="./images/Portfolio/mobile/img-8.jpg 1x, ./images/Portfolio/mobile/img-8@2x.jpg 2x"
+                                            media="(min-width: 280px)">
+                                        <img class="" src="./images/Portfolio/mobile/img-8.jpg"
+                                            alt="Михаил" />
+                                </picture>
                                 <div class="gallery-box">
                                     <h3 class="picture-name">Growing Business</h3>
                                     <p class="picture-text">Приложение</p>
@@ -208,7 +357,7 @@
             </div>
             
         </footer>
-
+        <script src="./js/menu.js"></script>
     </body>
 
 </html>

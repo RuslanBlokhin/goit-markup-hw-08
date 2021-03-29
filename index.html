@@ -25,18 +25,63 @@
                         <li><a href="#" class="link">Контакты</a></li>
                     </ul>
                 </nav>
+                <button class="mobile-open-btn" data-menu-button>
+                    <svg class="mobile-open-icon">
+                        <use href="./images/sprite.svg#icon-burger-menu"></use>
+                    </svg>
+                </button>
                 <ul class="list contact-list">
                     <li><a href="mailto:info@devstudio.com" class="link-contact mail">
-                                <svg class="email-icon">
-                                    <use href="./images/sprite.svg#icon-email"></use>
-                                </svg>
-                                info@devstudio.com
+                            <svg class="email-icon">
+                                <use href="./images/sprite.svg#icon-email"></use>
+                            </svg>
+                            info@devstudio.com
                         </a>
                     </li>
+                    <li>
+                        <a href="tel:+380961111111" class="link-contact tel">
+                            <svg class="tel-icon">
+                                <use href="./images/sprite.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mobile-menu" data-menu>
+                <button class="mobile-menu-close-btn" data-menu-close>
+                    <svg class="mobile-menu-close-icon">
+                        <use href="./images/sprite.svg#icon-close-button"icon-close-button></use>
+                    </svg>
+                </button>
+                <ul class="site-nav list">
+                    <li><a href="./index.html" class="link current">Студия</a></li>
+                    <li><a href="./portfolio.html" class="link">Портфолио</a></li>
+                    <li><a href="#" class="link">Контакты</a></li>
+                </ul>
+                <ul class="list contact-list">
                     <li><a href="tel:+380961111111" class="link-contact tel">
-                        <svg class="tel-icon">
-                            <use href="./images/sprite.svg#icon-smartphone"></use>
-                        </svg>+38 096 111 11 11</a></li>
+                        +38 096 111 11 11
+                        </a>
+                    </li>
+                    <li><a href="mailto:info@devstudio.com" class="link-contact mail">
+                        info@devstudio.com
+                        </a>
+                    </li>
+                    
+                </ul>
+                <ul class="menu-social-list list">
+                    <li class="menu-social-list-item">
+                        <a class="menu-social-list-link">Instagram</a>
+                    </li>
+                    <li class="menu-social-list-item">
+                        <a class="menu-social-list-link">Twitter</a>
+                    </li>
+                    <li class="menu-social-list-item">
+                        <a class="menu-social-list-link">Facebook</a>
+                    </li>
+                    <li class="menu-social-list-item">
+                        <a class="menu-social-list-link">LinkedIn</a>
+                    </li>
                 </ul>
             </div>
         </header>
@@ -45,7 +90,7 @@
 
             <!--Hero-->
             
-            <section class="hero">
+            <section class="hero section">
                 <div class="container hero-container">
                     <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
                     <button type="button" class="button primary" data-modal-open>Заказать услугу</button>
@@ -59,53 +104,49 @@
                     <h2 class="section-title visually-hidden">Почему выбирают нас</h2>
                     
                     <ul class="advantages-icon-list list">
-                        <li class="advantages-icon">
-                                <svg class="item-icon">
-                                    <use href="./images/sprite.svg#icon-Group"></use>
-                                </svg>
-                        </li>
-                        <li class="advantages-icon">
-                                <svg class="item-icon">
-                                    <use href="./images/sprite.svg#icon-clock"></use>
-                                </svg>
-                        </li>
-                        <li class="advantages-icon">
-                                <svg class="item-icon">
-                                    <use href="./images/sprite.svg#icon-diagram"></use>
-                                </svg>
-                        </li>
-                        <li class="advantages-icon">
-                                <svg class="item-icon">
-                                    <use href="./images/sprite.svg#icon-astronaut"></use>
-                                </svg>
-                        </li>
-                    </ul>
-
-                    <ul class="advantages list">
-                        <li>
-                            
+                        <div class="advamtages-box">
+                            <li class="advantages-icon">
+                                    <svg class="item-icon">
+                                        <use href="./images/sprite.svg#icon-Group"></use>
+                                    </svg>  
+                            </li>
                             <h3 class="title-advantages">Внимание к деталям</h3>
-                            <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-                        </li>
-                        <li>
+                            <p class="title-advantages-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                        </div>
+                        <div class="advamtages-box">
+                            <li class="advantages-icon">
+                                    <svg class="item-icon">
+                                        <use href="./images/sprite.svg#icon-clock"></use>
+                                    </svg>     
+                            </li>
                             <h3 class="title-advantages">Пунктуальность</h3>
-                            <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-                        </li>
-                        <li>
+                            <p class="title-advantages-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                        </div>
+                        <div class="advamtages-box">
+                            <li class="advantages-icon">
+                                    <svg class="item-icon">
+                                        <use href="./images/sprite.svg#icon-diagram"></use>
+                                    </svg>      
+                            </li>
                             <h3 class="title-advantages">Планирование</h3>
-                            <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-                        </li>
-                        <li>
+                            <p class="title-advantages-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                        </div>
+                        <div class="advamtages-box">
+                            <li class="advantages-icon">
+                                    <svg class="item-icon">
+                                        <use href="./images/sprite.svg#icon-astronaut"></use>
+                                    </svg>
+                            </li>
                             <h3 class="title-advantages">Современные технологии</h3>
-                            <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-                        </li>
+                            <p class="title-advantages-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                        </div>
                     </ul>
                 </div>
             </section>
 
             <!--What are we doing-->
             
-            <section class="section">
+            <section class="section what-are-section">
                 <div class="container">
                     <h2 class="section-title">Чем мы занимаемся</h2>
                     <ul class="work-list list">
@@ -130,11 +171,32 @@
             <!--Our employees-->
 
             <section class="section employees">
-                <div class="container">
+                <div class="container employees-container">
                     <h2 class="section-title employees-title">Наша Команда</h2>
                     <ul class="employees-list list">
                         <li>
-                            <img src="./images/MainPage/img14.jpg" width="270" alt="Игорь">
+                            <picture class="about__list-picture">
+                                <!-- <source
+                                    srcset="./images/about/about-img-desktop-02.webp 1x, ./images/about/about-img-desktop-02@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp"> -->
+                                <source
+                                    srcset="./images/Employees/desctop/desctop.jpg 1x, ./images/Employees/desctop/desctop@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <!-- <source
+                                    srcset="./images/about/about-img-tablet-02.webp 1x, ./images/about/about-img-tablet-02@2x.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp"> -->
+                                <source
+                                    srcset="./images/Employees/tablet/tablet.jpg 1x, ./images/Employees/tablet/tablet@2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <!-- <source
+                                    srcset="./images/about/about-img-tablet-02.webp 1x, ./images/about/about-img-tablet-02@2x.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp"> -->
+                                <source
+                                    srcset="./images/Employees/mobile/ebployees1.jpg 1x, ./images/Employees/mobile/employees1@2x.jpg 2x"
+                                    media="(min-width: 280px)">
+                                <img class="" src="./images/Employees/mobile/ebployees1.jpg"
+                                    alt="Игорь Демьяненко" />
+                            </picture>
                             <div class="employees-box">
                                 <h3 class="employees-name">Игорь Демьяненко</h3>
                                 <p class="employees-position">Product Designer</p>
@@ -171,7 +233,25 @@
                             </div>
                         </li>
                         <li>
-                            <img src="./images/MainPage/img15.jpg" width="270" alt="Ольга">
+                            <picture class="about__list-picture">
+                                <!-- <source
+                                    srcset="./images/about/about-img-desktop-02.webp 1x, ./images/about/about-img-desktop-02@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp"> -->
+                                <source
+                                    srcset="./images/Employees/desctop/desctop-1.jpg 1x, ./images/Employees/desctop/desctop-1@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <!-- <source
+                                    srcset="./images/about/about-img-tablet-02.webp 1x, ./images/about/about-img-tablet-02@2x.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp"> -->
+                                <source
+                                    srcset="./images/Employees/tablet/tablet-1.jpg 1x, ./images/Employees/tablet/tablet-1@2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/Employees/mobile/employees2.jpg 1x, ./images/Employees/mobile/employees2@2x.jpg 2x"
+                                    media="(min-width: 280px)">
+                                <img class="" src="./images/Employees/mobile/employees2.jpg"
+                                    alt="Ольга" />
+                            </picture>
                             <div class="employees-box">
                                 <h3 class="employees-name">Ольга Репина</h3>
                                 <p class="employees-position">Frontend Developer</p>
@@ -208,7 +288,25 @@
                             </div>
                         </li>
                         <li>
-                            <img src="./images/MainPage/img16.jpg" width="270" alt="Николай">
+                            <picture class="about__list-picture">
+                                <!-- <source
+                                    srcset="./images/about/about-img-desktop-02.webp 1x, ./images/about/about-img-desktop-02@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp"> -->
+                                <source
+                                    srcset="./images/Employees/desctop/desctop-2.jpg, ./images/Employees/desctop/desctop-2@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <!-- <source
+                                    srcset="./images/about/about-img-tablet-02.webp 1x, ./images/about/about-img-tablet-02@2x.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp"> -->
+                                <source
+                                    srcset="./images/Employees/tablet/tablet-2.jpg, ./images/Employees/tablet/tablet-2@2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/Employees/mobile/employees3.jpg 1x, ./images/Employees/mobile/employees3@2x.jpg 2x"
+                                    media="(min-width: 280px)">
+                                <img class="" src="./images/Employees/mobile/employees3.jpg"
+                                    alt="Николай" />
+                            </picture>
                             <div class="employees-box">
                                 <h3 class="employees-name">Николай Тарасов</h3>
                                 <p class="employees-position">Marketing</p>
@@ -245,7 +343,25 @@
                             </div>
                         </li>
                         <li> 
-                            <img src="./images/MainPage/img17.jpg" width="270" alt="Михаил">
+                            <picture class="about__list-picture">
+                                <!-- <source
+                                    srcset="./images/about/about-img-desktop-02.webp 1x, ./images/about/about-img-desktop-02@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp"> -->
+                                <source
+                                    srcset="./images/Employees/desctop/desctop-3.jpg 1x, ././images/Employees/desctop/desctop-3@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <!-- <source
+                                    srcset="./images/about/about-img-tablet-02.webp 1x, ./images/about/about-img-tablet-02@2x.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp"> -->
+                                <source
+                                    srcset="./images/Employees/tablet/tablet-3.jpg 1x, ./images/Employees/tablet/tablet-3@2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                 <source
+                                    srcset="./images/Employees/mobile/employees4.jpg 1x, ./images/Employees/mobile/employees4@2x.jpg 2x"
+                                    media="(min-width: 280px)">
+                                <img class="" src="./images/Employees/mobile/employees4.jpg"
+                                    alt="Михаил" />
+                            </picture>
                             <div class="employees-box">
                                 <h3 class="employees-name">Михаил Ермаков</h3>
                                 <p class="employees-position">Ul Designer</p>
@@ -287,10 +403,10 @@
 
              <!-- Regular customers -->
 
-            <section class="section-customer">
+            <section class="section section-customer">
 
                 <div class="container">
-                    <h2 class="section-title">Постоянные клиенты</h2>
+                    <h2 class="section-title customer-title">Постоянные клиенты</h2>
                     <ul class="regular-customers list">
                         <li class="regular-customers-item">
                             <a href="" class="regular-customers-icon">
@@ -449,6 +565,7 @@
             </div>
         </footer>
         <script src="./js/modal.js"></script>
+        <script src="./js/menu.js"></script>
     </body>
 
 </html>                                                                                                                                                                                                      

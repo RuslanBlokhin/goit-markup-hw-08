@@ -1,16 +1,11 @@
 .employees {
     background-color: #f5f4fa;
-}
-
-.employees-title {
-    padding-top: 94px;
+    // padding-bottom: 60px;
 }
 
 .employees-list {
     display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-    padding-bottom: 94px;
+    flex-direction: column;
 }
 
 .employees-list>li {
@@ -20,6 +15,10 @@
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    
+    &:not(:last-child) {
+    margin-bottom: 30px;
+    }
 }
 
 .employees-list .employees-name {
@@ -49,3 +48,97 @@
     padding-left: 32px;
     padding-right: 32px;
 }
+
+
+@media (min-width:768px) {
+    .employees-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: -30px;
+    margin-left: -30px
+    }
+
+    .employees-list>li {
+        margin: 0;
+        position: relative;
+        width: calc(100% / 2 - 30px);
+        margin-left: 30px;
+        margin-top: 30px;
+        // height: 536px;
+        &:not(:last-child) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (min-width:1200px) {
+    .employees-list {
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        margin: 0;
+    }
+
+    .employees-list>li {
+        width: 270px;
+        margin: 0;
+        
+    }
+
+    .employees-container {
+        padding-bottom: 94px;
+    }
+}
+
+// .employees {
+//     background-color: #f5f4fa;
+// }
+
+// .employees-title {
+//     padding-top: 94px;
+// }
+
+// .employees-list {
+//     display: flex;
+//     justify-content: space-between;
+//     margin-top: 50px;
+//     padding-bottom: 94px;
+// }
+
+// .employees-list>li {
+//     background-color: var(--primary-white-color);
+
+//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+//         0px 1px 1px rgba(0, 0, 0, 0.14),
+//         0px 2px 1px rgba(0, 0, 0, 0.2);
+//     border-radius: 0px 0px 4px 4px;
+// }
+
+// .employees-list .employees-name {
+//     font-weight: 500;
+//     font-size: 16px;
+//     line-height: 1.87;
+// }
+
+// .employees-list .employees-position {
+//     font-weight: 400;
+//     font-size: 16px;
+//     line-height: 1.87;
+// }
+
+// .employees-name {
+//     color: var(--tittle-text-color);
+//     text-align: center;
+//     padding-top: 30px;
+//     margin-bottom: 10px;
+// }
+
+// .employees-position {
+//     text-align: center;
+// }
+
+// .employees-box {
+//     padding-left: 32px;
+//     padding-right: 32px;
+// }
