@@ -15,7 +15,10 @@
 
 .work-list-item {
     position: relative;
-
+    
+    &:not(:last-child) {
+    margin-right: 30px; 
+    }
 }
 
 .work-list-title {
@@ -26,7 +29,7 @@
     padding-top: 26px;
     left: 0;
     right: 0;
-    top: 224px;
+    top: 195px;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;

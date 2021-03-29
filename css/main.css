@@ -795,6 +795,9 @@ body {
     width: 270px;
     margin: 0;
   }
+  .advamtages-box:not(:last-child) {
+    margin-right: 30px;
+  }
   .advantages-icon {
     width: 270px;
   }
@@ -817,6 +820,10 @@ body {
   position: relative;
 }
 
+.work-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .work-list-title {
   position: absolute;
   text-align: center;
@@ -825,7 +832,7 @@ body {
   padding-top: 26px;
   left: 0;
   right: 0;
-  top: 224px;
+  top: 195px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -976,6 +983,9 @@ body {
     width: 270px;
     margin: 0;
   }
+  .employees-list > li:not(:last-child) {
+    margin-right: 30px;
+  }
   .employees-container {
     padding-bottom: 94px;
   }
@@ -1049,6 +1059,10 @@ body {
   padding: 0;
 }
 
+.subscribe {
+  width: 450px;
+}
+
 .subscribe-title {
   text-align: center;
   margin-bottom: 20px;
@@ -1058,10 +1072,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 450px;
 }
 
 .subscribe-email {
-  min-width: 450px;
+  width: 450px;
   height: 50px;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1076,6 +1091,18 @@ body {
   display: inline-block;
   width: 24px;
   height: 24px;
+}
+
+@media (max-width: 767px) {
+  .subscribe {
+    width: 100%;
+  }
+  .subscribe-form {
+    width: 100%;
+  }
+  .subscribe-email {
+    width: 100%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1095,6 +1122,9 @@ body {
   .enjoy {
     margin-right: 75px;
   }
+  .subscribe-email {
+    width: 100%;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1107,6 +1137,7 @@ body {
   }
   .subscribe {
     margin: 0;
+    margin-left: 0;
   }
   .subscribe-form {
     margin: 0;
@@ -1118,6 +1149,9 @@ body {
   }
   .subscribe-title {
     text-align: left;
+  }
+  .subscribe-email {
+    width: 100%;
   }
 }
 
@@ -1254,8 +1288,8 @@ body {
     width: 370px;
   }
   .gallery-box {
-    width: 370px;
-    height: 110px;
+    width: 100%;
+    height: 132px;
   }
   .gallery-list {
     flex-direction: row;
