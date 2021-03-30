@@ -114,6 +114,7 @@
 
     .subscribe-email {
         width: 100%;
+        max-width: 450px;
     }
 } 
 
@@ -121,16 +122,13 @@
     .low-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
     align-items: baseline;
 
     
     }
 
-    .subscribe {
-        margin-left: 166px;
-    }
 
     .contacts-box {
         margin-left: 61px;
@@ -142,6 +140,7 @@
 
     .subscribe-email {
         width: 100%;
+        
     }
 }
 
@@ -157,11 +156,13 @@
     }
 
     .subscribe {
+        width: 570px;
         margin: 0;
         margin-left: 0;
     }
 
     .subscribe-form {
+        width: 100%;
         margin: 0;
         flex-direction: row;
         align-items: baseline;
@@ -177,7 +178,14 @@
     }
 
     .subscribe-email {
-        width: 100%;
+        width: 358px;
+        height: 50px;
+        padding-left: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background-color: #2f303a;
+        color: var(--primary-white-color);
     }
 }
 
